@@ -67,7 +67,7 @@
                     </div>
                 </a>
                 <a href="matkul.html">
-                    <div class="px-4 py-3 text-white font-bold rounded-lg flex cursor-pointer duration-300 warna-main">
+                    <div class="px-4 py-3 text-gray-600 font-bold rounded-lg flex cursor-pointer duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path fill-rule="evenodd"
@@ -88,17 +88,16 @@
                         <p class="ml-2">Jadwal</p>
                     </div>
                 </a>
-                <a href="setting.html">
-                    <div class="px-4 py-3 text-gray-600 font-bold rounded-lg flex cursor-pointer hover:bg-purple-200 duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="ml-2">Setting</p>
-                    </div>
-                </a>
+                <div
+                    class="px-4 py-3 text-white font-bold rounded-lg flex cursor-pointer duration-300 warna-main">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-2">Setting</p>
+                </div>
                 <div
                     class="px-4 py-3 text-gray-600 font-bold rounded-lg flex cursor-pointer hover:bg-red-200 duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" fill="none" viewBox="0 0 24 24"
@@ -113,8 +112,100 @@
 
             <div class="col-span-12 lg:col-span-10">
                 <div class="">
-                    <div class="bg-white px-3 py-3 rounded-lg shadow flex">
-                        <table class="text-left table-auto w-full">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div>
+                            <p class="font-semibold text-gray-600 text-xl mb-1">Data Pribadi</p>
+                            <div class="grid grid-cols-2">
+                                <div>
+                                    <p class="text-gray-700 text-sm -mb-1">Nama</p>
+                                    <div class="flex gap-3">
+                                        <p class="my-auto">Ricky Aditya Bagaskara</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-sm -mb-1">Email</p>
+                                    <div class="flex gap-3">
+                                        <p class="my-auto">rickyaditb@unpak.ac.id</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div>
+                                    <p class="text-gray-700 text-sm -mb-1">Fakultas</p>
+                                    <div class="flex gap-3">
+                                        <p class="my-auto">FMIPA</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-sm -mb-1">Jurusan</p>
+                                    <div class="flex gap-3">
+                                        <p class="my-auto">Ilmu Komputer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 mt-1">
+                                <div>
+                                    <p class="text-gray-700 text-sm -mb-2">Nomor HP</p>
+                                    <div class="flex gap-3">
+                                        <p class="my-auto">081213141516</p>
+                                        <span class="px-2 py-2 font-semibold leading-tight text-yellow-700 bg-yellow-100 text-sm rounded-lg">Ubah</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 text-sm -mb-2">Kata Sandi</p>
+                                    <div class="flex gap-3">
+                                        <p class="my-auto text-xl">************</p>
+                                        <span class="px-2 py-2 font-semibold leading-tight text-yellow-700 bg-yellow-100 text-sm rounded-lg">Ubah</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 mt-1">
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#" class="hidden">
+                            <div class="grid grid-cols-2">
+                                <div class="mr-10">
+                                    <label for="email" class="text-gray-700">Password Lama</label><br>
+                                    <input type="text" id="email" name="email" placeholder="Masukan Password Lama Anda" class="bg-gray-100 w-full p-2 rounded-lg focus:outline-none focus:ring-2">
+                                </div>
+                                <div>
+                                    <label for="password" class="text-gray-700">Password Baru</label><br>
+                                    <input type="password" id="password" name="password" placeholder="Masukan Password Baru Anda" class="bg-gray-100 w-full p-2 rounded-lg focus:outline-none focus:ring-2">
+                                </div>
+                            </div>
+                        </form>
+                        <div>
+                            <p class="font-semibold text-gray-600 text-xl mt-4 mb-1">Kustomisasi</p>
+                            <div class="grid grid-cols-2">
+                                <div class="mr-5">
+                                    <label for="email" class="text-gray-700 text-sm">Tampilan Bahasa</label><br>
+                                    <select name="cars" id="cars" class="p-2 rounded-lg text-gray-800 w-full">
+                                        <option value="volvo">Bahasa Indonesia</option>
+                                        <option value="saab">Bahasa Inggris</option>
+                                        <option value="opel">Bahasa Jepang</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="email" class="text-gray-700 text-sm">Mode Layar</label><br>
+                                    <select name="cars" id="cars" class="p-2 rounded-lg text-gray-800 w-full">
+                                        <option value="saab">Mode Terang</option>
+                                        <option value="opel">Mode Malam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <span class="ml-auto p-3 font-semibold leading-tight text-green-700 bg-green-100 text-sm rounded-lg">Simpan</span>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <table class="text-left table-auto w-full hidden">
                             <tr class="text-gray-500">
                                 <th class="font-semibold p-3">Mata Kuliah</th>
                                 <th class="font-semibold p-3">Bobot SKS</th>
