@@ -23,7 +23,7 @@
     <title>Learning Management System | Universitas Ligma</title>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100" onload="fadeIn()">
 
     <div class="container mx-auto px-3 lg:px-16">
         <div class="bg-white p-5 mt-3 lg:mt-10 rounded-lg flex shadow">
@@ -112,7 +112,7 @@
 
 
             <div class="col-span-12 lg:col-span-10">
-                <div class="">
+                <div class="fade opacity-0 transition duration-300 ease-in">
                     <div class="bg-white px-3 py-3 rounded-lg shadow flex">
                         <table class="text-left table-auto w-full">
                             <tr class="text-gray-500">
@@ -204,6 +204,16 @@
             <p>Setting</p>
         </div>
     </div>
+
+    <script>
+        var fade = document.querySelectorAll(".fade");
+        function fadeIn() {
+            for (let i = 0; i < fade.length; i++) {
+                fade[i].classList.remove('opacity-0');
+                fade[i].classList.add('opacity-100');
+            }
+        }
+    </script>
     
 
 

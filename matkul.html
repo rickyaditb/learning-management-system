@@ -23,7 +23,7 @@
     <title>Learning Management System | Universitas Ligma</title>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100" onload="fadeIn()">
 
     <div class="container mx-auto px-3 lg:px-16">
         <div class="bg-white p-5 mt-3 lg:mt-10 rounded-lg flex shadow">
@@ -112,7 +112,7 @@
 
 
             <div class="col-span-12 lg:col-span-10">
-                <div class="">
+                <div class="fade opacity-0 transition duration-300 ease-in">
                     <div class="bg-white px-3 py-3 rounded-lg shadow overflow-x-auto">
                         <button class="px-2 py-2 font-semibold leading-tight text-blue-700 bg-blue-100 rounded-lg px-3 flex gap-1 ml-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -289,6 +289,16 @@
             <p>Setting</p>
         </div>
     </div>
+
+    <script>
+        var fade = document.querySelectorAll(".fade");
+        function fadeIn() {
+            for (let i = 0; i < fade.length; i++) {
+                fade[i].classList.remove('opacity-0');
+                fade[i].classList.add('opacity-100');
+            }
+        }
+    </script>
     
 
 
