@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .warna-main {
+            background-color: #6C63FF;
+        }
+
+        .warna-bg {
+            background-color: #25294a;
+        }
+
+        .warna-border {
+            border-color: #6C63FF;
+        }
+
+        .warna-text {
+            color: #6C63FF;
+        }
+
+    </style>
+    <title>Learning Management System | Universitas Ligma</title>
+</head>
+<body>
+    <div class="container mx-auto p-5 md:grid grid-cols-2 h-screen">
+        <div class="px-8 mx-auto mt-16 md:m-0 md:my-auto"><img src="img/step.svg"></div>
+        <div class="mt-10 md:my-auto md:mx-16 transition duration-500" id="login">
+            <form action="#">
+                <p class="text-center font-bold text-2xl text-gray-600 mb-10">Lengkapi Data Diri Anda</p>
+                <label for="nama" class="text-gray-700">Nama</label><br>
+                <input type="text" id="nama" name="nama" value="Ricky Aditya Bagaskara" class="bg-gray-100 w-full py-3 px-3 rounded-lg mb-5 focus:outline-none focus:ring-2 border-none text-black" disabled><br>
+                <label for="status" class="text-gray-700">Status</label><br>
+                <select name="status" id="status" class="bg-gray-100 w-full py-3 px-3 rounded-lg focus:outline-none focus:ring-2 border-none text-black">
+                    <option disabled selected="true">Pilih Status Anda</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Dosen">Dosen</option>
+                </select><br><br>
+                <label for="jurusan" class="text-gray-700">Jurusan</label><br>
+                <select name="jurusan" id="jurusan" class="bg-gray-100 w-full py-3 px-3 rounded-lg focus:outline-none focus:ring-2 border-none text-black">
+                    <option disabled selected="true">Pilih Jurusan Anda</option>
+                    <option value="Ilmu Komputer">Ilmu Komputer</option>
+                    <option value="Farmasi">Farmasi</option>
+                </select><br><br>
+                <div class="grid grid-cols-2 gap-3">
+                    <input type="submit" value="Kembali" class="w-full py-3 rounded-lg warna-text warna-border border-2 font-bold cursor-pointer">
+                    <input type="submit" value="Selesai" class="w-full py-3 rounded-lg text-white warna-main font-bold cursor-pointer">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+
+    </script>
+
+    
+</body>
+</html>
