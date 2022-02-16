@@ -2,7 +2,11 @@ module.exports = {
   content: ['*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'utama': {DEFAULT:"#6C63FF"}
+      }
+    },
   },
   variants: {
     extend: {
@@ -10,8 +14,5 @@ module.exports = {
       borderColor: ['checked'],
       textColor: ['checked'],
     },
-  },
-  plugins: [
-    require('@tailwindcss/forms')
-  ]
+  }
 }
