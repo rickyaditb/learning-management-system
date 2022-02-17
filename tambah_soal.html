@@ -112,58 +112,77 @@
             </div>
 
 
-            <div class="col-span-12 md:col-span-8 lg:col-span-7 mb-10 fade opacity-0 transition duration-300 ease-in">
-                <div class="">
+            <div class="col-span-12 md:col-span-8 lg:col-span-7 mb-16">
+                <div class="fade opacity-0 transition duration-300 ease-in">
                     <div class="bg-white rounded shadow px-5 py-3 mb-3 text-gray-700 font-semibold flex">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 mt-0.5 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                         </svg>
-                        <p class="my-auto">Semester 5 > Sistem Informasi Geografis > Kelas B</p>
+                        <p class="my-auto">Semester 5 > Sistem Informasi Geografis</p>
                     </div>
-                    <div>
-                        <div class="bg-white rounded shadow px-5 py-3 mb-2 text-gray-700">
-                            <p class="my-auto">1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto esse maiores commodi qui obcaecati atque alias veniam unde quam. Laborum suscipit alias, ratione officiis quasi commodi corrupti quod vel pariatur!</p>
-                        </div>
-                        <div class="grid grid-cols-1 gap-1">
-                            <div class="relative">
-                                <input id="radio1" name="testradios1" type="radio" class="sr-only peer">
-                                <label for="radio1" class="flex hover:bg-yellow-200 peer-checked:bg-utama peer-checked:text-white bg-white rounded shadow px-5 py-3 mb-1 text-gray-700 transition cursor-pointer select-none">
-                                    A. Lorem ipsum dolor sit amet.
-                                </label>
-                            </div>
-                            <div class="relative">
-                                <input id="radio2" name="testradios1" type="radio" class="sr-only peer">
-                                <label for="radio2" class="flex hover:bg-yellow-200 peer-checked:bg-utama peer-checked:text-white bg-white rounded shadow px-5 py-3 mb-1 text-gray-700 transition cursor-pointer select-none">
-                                    B. Lorem ipsum dolor sit amet.
-                                </label>
-                            </div>
-                            <div class="relative">
-                                <input id="radio3" name="testradios1" type="radio" class="sr-only peer">
-                                <label for="radio3" class="flex hover:bg-yellow-200 peer-checked:bg-utama peer-checked:text-white bg-white rounded shadow px-5 py-3 mb-1 text-gray-700 transition cursor-pointer select-none">
-                                    C. Lorem ipsum dolor sit amet.
-                                </label>
-                            </div>
-                            <div class="relative">
-                                <input id="radio4" name="testradios1" type="radio" class="sr-only peer">
-                                <label for="radio4" class="flex hover:bg-yellow-200 peer-checked:bg-utama peer-checked:text-white bg-white rounded shadow px-5 py-3 mb-1 text-gray-700 transition cursor-pointer select-none">
-                                    D. Lorem ipsum dolor sit amet.
-                                </label>
-                            </div>
-                        </div>
+                    <div class="bg-white p-7 rounded-lg shadow transform transition duration-300">
+                        <p class="font-bold text-gray-600 text-2xl mb-5">Tambah Pertemuan</p>
+                        <label for="judul" class="text-gray-700">Judul Pertemuan</label><br>
+                        <input type="text" id="judul" name="judul" placeholder="Masukan Judul Pertemuan" class="bg-gray-100 w-full py-3 px-3 rounded mb-5 focus:outline-none focus:ring-2 border-none"><br>
+                        <label for="keterangan" class="text-gray-700">Keterangan Pertemuan</label><br>
+                        <textarea id="keterangan" name="keterangan" rows="4" class="w-full border-none bg-gray-100 rounded resize-none hover:resize" placeholder="Masukan Keterangan Pertemuan"></textarea><br><br>
+                        <label for="tanggal" class="text-gray-700">Tanggal Pertemuan</label><br>
+                        <input type="date" id="tanggal" name="tanggal" class="bg-gray-100 w-full py-3 px-3 rounded mb-5 focus:outline-none focus:ring-2 border-none"><br>
+                        <label for="waktu" class="text-gray-700">Waktu Pertemuan</label><br>
+                        <select name="waktu" id="waktu" class="bg-gray-100 w-full py-3 px-3 rounded-lg focus:outline-none focus:ring-2 border-none text-black">
+                            <option disabled selected="true">Pilih Waktu Pertemuan</option>
+                            <option value="1">08.00 - 09.40</option>
+                            <option value="2">10.00 - 11.40</option>
+                            <option value="3">13.00 - 14.40</option>
+                            <option value="4">15.00 - 17.40</option>
+                        </select><br><br>
+                        <label for="tempat" class="text-gray-700">Tempat Pertemuan</label><br>
+                        <select name="tempat" id="tempat" class="bg-gray-100 w-full py-3 px-3 rounded-lg focus:outline-none focus:ring-2 border-none text-black">
+                            <option disabled selected="true">Pilih Tempat Pertemuan</option>
+                            <option value="1">GPS 3A Ruang 1</option>
+                            <option value="2">GPS 3A Ruang 2</option>
+                            <option value="3">GPS 3A Ruang 3</option>
+                            <option value="4">Online</option>
+                        </select><br><br>
+                        <div class="warna-main text-white font-bold px-3 py-2 w-fit rounded ml-auto">Tambah</div>
+
                     </div>
-                    
-
-
                 </div>
             </div>
 
             <div class="col-span-12 md:col-span-4 lg:col-span-3 mb-20 fade opacity-0 transition duration-300 ease-in">
-
+                <div class="warna-main text-white p-3 font-bold rounded shadow flex mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
+                        <path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-2">Tambah Pertemuan</p>
+                </div>
+                <div class="bg-white text-gray-600 p-3 font-bold rounded shadow flex mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                    </svg>
+                    <p class="ml-2">Daftar Mahasiswa</p>
+                </div>
+                <div class="bg-white text-gray-600 p-3 font-bold rounded shadow flex mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-2">Data Presensi</p>
+                </div>
+                <div class="bg-white text-gray-600 p-3 font-bold rounded shadow flex mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                    </svg>
+                    <p class="ml-2">Data Tugas</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="flex fixed bg-white shadow-2xl justify-center gap-10 inset-x-0 bottom-0 z-10 py-2 lg:hidden text-gray-700">
+    <div
+        class="flex fixed bg-white shadow-2xl justify-center gap-10 inset-x-0 bottom-0 z-10 py-2 lg:hidden text-gray-700">
         <div class="text-warna-main">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto mx-auto" viewBox="0 0 20 20"
                 fill="currentColor">
